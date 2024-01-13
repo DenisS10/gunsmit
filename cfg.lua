@@ -159,9 +159,9 @@
         time = 20,
         permissions={"@mechanic.weapons.>0"},
         reagents = {
-          ["резина"] = 5,
-          ["steel"] = 5,
-          ["steel3"] = 5
+          ["резина"] = 3,
+          ["steel"] = 3,
+          ["steel3"] = 2
         },
         products = {
           ["wbody|WEAPON_NIGHTSTICK"] = 1
@@ -175,8 +175,10 @@
         time = 20,
         permissions={"@mechanic.weapons.>0"},
         reagents = {
-          ["steel3"] = 10,
-          ["резина"] = 10
+          ["steel2"] = 10,
+          ["steel"] = 1,
+          ["древесина"] = 1,
+          ["резина"] = 5
         },
         products = {
           ["wbody|WEAPON_COLBATON"] = 1
@@ -190,9 +192,8 @@
         time = 10,
         permissions={"@mechanic.weapons.>0"},
         reagents = {
-          ["steel"] = 4,
-          ["резина"] = 5,
-          ["steel3"] = 2,
+          ["steel"] = 2,
+          ["резина"] = 3,
         },
         products = {
           ["tw__WEAPON_COLBATON__COMPONENT_COLBATON_GRIP_01"] = 1
@@ -342,9 +343,10 @@
         time = 40,
         permissions={"@mechanic.weapons.>1"},
         reagents = {
-          ["резина"] = 6,
-          ["steel"] = 1,
-          ["деталисред"] = 3,
+          ["резина"] = 5,
+          ["steel"] = 2,
+          ["steel2"] = 3,
+          ["деталинизк"] = 2,
         },
         products = {
           ["wbody|WEAPON_STUNGUN"] = 1
@@ -358,10 +360,8 @@
         time = 40,
         permissions={"@mechanic.weapons.>1"},
         reagents = {
-          ["краска"] = 10,
-          ["резина"] = 2,
-          ["steel"] = 10,
-          ["steel2"] = 15,
+          ["краска"] = 11,
+          ["steel"] = 5,
           ["деталинизк"] = 1
         },
         products = {
@@ -408,7 +408,7 @@
         permissions={"@mechanic.weapons.>4"},
         reagents = {
           ["деталинизк"] = 2,
-          ["steel2"] = 10,
+          ["steel2"] = 25,
         },
         products = {
           ["wbody|WEAPON_PISTOL"] = 1
@@ -423,7 +423,7 @@
         permissions={"@mechanic.weapons.>4"},
         reagents = {
           ["деталинизк"] = 1,
-          ["steel2"] = 3,
+          ["steel2"] = 6,
           ["wbody|WEAPON_PISTOL"] = 1
         },
         products = {
@@ -517,9 +517,12 @@
         reagents = {
           ["древесина"] = 3,
           ["резина"] = 1,
+          ["steel"] = 1,
+          ["steel2"] = 2,
           ["steel3"] = 1,
+          ["деталинизк"] = 3,
           ["краска"] = 5,
-          ["деталисред"] = 5,
+          ["деталисред"] = 1,
         },
         products = {
           ["wbody|WEAPON_FLAREGUN"] = 1
@@ -533,13 +536,10 @@
         time = 120,
         permissions={"@mechanic.weapons.>6"},
         reagents = {
-          ["древесина"] = 10,
-          ["деталисред"] = 5,
-          ["деталивыс"] = 10,
-          ["резина"] = 10,
-          ["steel"] = 10,
-          ["steel3"] = 10,
-          ["краска"] = 5,
+          ["деталинизк"] = 10,
+          ["резина"] = 1,
+          ["steel"] = 20,
+          ["steel2"] = 25,
         },
         products = {
           ["wbody|WEAPON_COMBATPISTOL"] = 1
@@ -639,8 +639,10 @@
         permissions={"@mechanic.weapons.>6"},
         reagents = {
           ["деталисред"] = 7,
+          ["деталивыс"] = 1,
           ["деталинизк"] = 3,
-          ["steel2"] = 5
+          ["steel2"] = 7,
+          ["steel3"] = 15,
         },
         products = {
           ["wbody|WEAPON_PUMPSHOTGUN"] = 1
@@ -968,12 +970,34 @@
         time = 250,
         permissions={"@mechanic.weapons.>10"},
         reagents = {
-          ["краска"] = 10,
-          ["деталисред"] = 10,
-          ["деталивыс"] = 20
+          ["steel2"] = 5,
+          ["деталисред"] = 6,
+          ["деталивыс"] = 5,
+          ["древесина"] = 4,
         },
         products = {
           ["wbody|WEAPON_CARBINERIFLE"] = 1
+        },
+        aptitudes={
+        ["mechanic.weapons"] = 3
+        },
+      },
+      ["IV Карабин M16"] = {
+        description = "Изготовить карабин М16 <br /> <img src='https://img.amzmdt.com/img/m4-120.png'>",
+        time = 250,
+        permissions={"@mechanic.weapons.>10"},
+        reagents = {
+          ["steel"] = 5,
+          ["steel2"] = 5,
+          ["steel3"] = 5,
+          ["резина"] = 5,
+          ["деталинизк"] = 1,
+          ["деталисред"] = 3,
+          ["деталивыс"] = 4,
+          ["древесина"] = 10,
+        },
+        products = {
+          ["wbody|WEAPON_TACTICALRIFLE"] = 1
         },
         aptitudes={
         ["mechanic.weapons"] = 3
@@ -984,8 +1008,7 @@
         time = 350,
         permissions={"@mechanic.weapons.>10"},
         reagents = {
-          ["деталивыс"] = 3,
-          ["деталисред"] = 2,
+          ["деталисред"] = 10,
           ["wbody|WEAPON_CARBINERIFLE"] = 1
         },
         products = {
